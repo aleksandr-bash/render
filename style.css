@@ -1,0 +1,19 @@
+body {
+    background: #333133;
+    padding: 0;
+}
+h1 {
+    color: #7c197c
+}
+
+.header-menu {
+    background: #222020;
+    color: #ffffff;
+    padding: 5px;
+}
+
+.header-menu ul {
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+}
