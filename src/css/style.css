@@ -66,3 +66,11 @@ h1 {
     margin-top: 10px;
     font-weight: bold;
 }
+
+.card button.buy {
+    background: #facf80;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    padding: 8px 12px;
+}

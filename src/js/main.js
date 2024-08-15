@@ -24,7 +24,18 @@ function createCard(product) {
         <h3>${product.name}</h3>
         <p>${product.description}</p>
         <div class="price">$${product.price}</div>
+        <button class="buy" onclick=" _ => addToCart(product)" >Add to cart</button>
     `;
 
     return card
+}
+
+function addToCart(product) {
+    console.log(product);
+    let products = JSON.parse(localStorage.getItem('products')); // "[product_1, product_2]" || null
+    if(!products) {
+        products = [];
+    }
+    products.push(product);
+    localStorage.setItem('products', JSON.stringify(products));
 }
